@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Tacco</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/logo-new.png" type="image/img.png">
+    <link rel="stylesheet" href="responisive.css">
+</head>
+<body>
+    <section id="header">
+        <div>
+            <a href="index.html">
+                <img src="image/logo-new.png" alt="" id="logo">
+            </a>
+            <ul id="navbar">
+                <li><a href="addCart.html">ORDER NOW</a></li>
+                <li><a href="tacos.html">OUR FOOD</a></li>
+                <li><a href="aboutus.html">ABOUT</a></li>
+                <li><a href="">NUTRITION</a></li>
+                <li><a href="addCart.html">CART</a></li>
+                <li><a href="sign.html">Login</a></li>
+              <li><a href="">MORE <i class="fa fa-plus"></i></a></li>
+        </ul>
+            </div>
+ </section>
+ <section id="loginTaco">
+    <div class="backgroundTaco">
+        <img src="image/logintaco.jpeg" alt="">
+        </div>
+        <div class="loginTacoBell">
+    <div class="right-containerTaco">
+        <div class="button-boxTaco">
+            <div id="btnTacoLogin"></div>
+    <button onclick="signUp()">Sign Up</button>
+    <button onclick="signIn()">Sign In</button>
+</div>
+</div>
+    <div class="containerLogin">
+        <div id="rightLogin" >
+            <div class="right1-containerLogin">
+            <form action="">
+                <div class="inputLogin">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Enter Email">
+                    <span id="email"></span>
+                </div>
+                <div class="inputLogin">
+                    <i class="fa fa-key"></i>
+                <input type="password" placeholder="Enter Password">
+                <span id="password"></span>
+                </div>
+                <p>Forgot Password ? <a href="index.html">Click here</a></p>
+                <br>
+                <input type="submit" class="submitLogin">
+            </form>
+        </div>
+    </div>
+        <div id="leftLogin">
+            <form action="" >
+                <div class="inputLogin">
+                    <i class="fa fa-user"></i>
+                    <input type="text" placeholder="Enter Name">
+                </div>
+                <div class="inputLogin">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Enter Email">
+                </div>
+                <div class="inputLogin">
+                    <i class="fa fa-key"></i>
+                <input type="password" placeholder="Enter Password">
+                <br>
+            </div>
+            <input type="submit" class="submitLogin">
+        </div>
+    </div>
+</div>
+</section>
+
+<section id="footer-start">
+    <div id="special">
+        <h1>SPECIAL OFFERS</h1>
+        <p>Don't miss out on exclusive Offers.</p>
+        <br>
+        <a href="">Special Offers</a>
+    </div>
+    <div id="findTacco">
+        <h1>FIND TACCO BELL</h1>
+        <p>Find the nearest Tacco Bell Restaurant in the city</p>
+        <br>
+        <a href="">Find Us</a>
+    </div>
+</section>
+<section id="footer">
+    <ul id="footer-ul">
+    <li><a href="">OUR FOOD</a></li>
+    <li><a href="">FIND US</a></li>
+    <li><a href="">NEWS</a></li>
+    <li><a href="">WORK WITH US</a></li>
+    <li><a href="">OFFERS</a></li>
+    <li><a href="">ABOUT US</a></li>
+    <li><a href="">CONTACT US</a></li>
+</ul>
+</section>
+    <script>
+        let a=   document.getElementById('rightLogin');
+        let b=document.getElementById('leftLogin');
+        function signIn(){
+            a.style.display='block';
+            b.style.display='none';
+        }
+        function signUp(){
+            a.style.display='none';
+            b.style.display='block';
+        }
+       
+    </script>
+</body>
+</html>

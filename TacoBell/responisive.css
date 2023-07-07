@@ -1,0 +1,297 @@
+
+     
+ @media(max-width:768px){
+    #slideimage{
+        width: 853px;
+    }
+    #one,#two,#three{
+        position: absolute;
+        background-color: aqua;
+        top: 390px;
+        margin-left: 250px;
+        height: 30px;
+        width: 30px;
+        border-radius: 80%;
+        cursor: pointer;
+    }
+    .item{
+        display: grid;  
+        grid-template-columns: repeat(3,230px);  
+       grid-gap: 50px;  
+      border-radius: 14px;
+       background-color: #fff; 
+  
+  }
+    .img1{
+        width: 230px;
+        box-shadow: 10px 10x 10px  aquamarine;
+        cursor: pointer;
+        border-radius: 14px;
+    
+ }
+ #foodh3{
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(3,230px);
+    grid-gap: 50px;
+}
+.resItem .resImg img{
+    display: block;
+    width: 853px;
+}
+#imageorder img{
+    width: 853px;
+    height: 100%;
+}
+#footer-start{
+    padding-top: 27px;
+}
+#footer-end{
+    width: 853px;
+}
+#footer-ul{
+    width: 853px;
+}
+#footer-ul a{
+    padding: 10px;
+    margin: 10px;
+}
+#footer-img p{
+    margin-left: 20px;
+    padding:10px;
+}
+#special{
+    width: 425px;
+    margin-top: 40px;
+}
+#findTacco{
+    margin-left: 429px;
+    margin-top: -304px;
+    border: 2px solid #181818;
+    background-color: #181818;
+    z-index: 1;
+    height: 300px;
+    width: 424px;
+}
+#special a{
+    margin-left: 150px;
+
+}
+#findTacco a{
+    margin-left: 170px;
+}
+#special p,
+#findTacco p{
+    margin-top: -60px;
+}
+
+#cont h2{
+    margin-left: 200px;
+
+}
+#cont h1{
+    margin-left: 210px;
+}
+.Orderh2 h1{
+    margin-left: -130px;
+    font-size:35px;
+}
+.Orderh2 a{
+    margin-left: -110px;
+}
+#tacosul li a{
+    font-size: 11px;
+     margin: 10px;
+     padding: 10px;
+ }
+ #tacosImage h1{
+    margin-left:320px;
+    font-size: 30px;
+}
+.tacosInternalImage{
+    width: 853px;
+    height: 100%;
+}
+.normal{
+    padding: 10px;
+    margin: 10px;
+    font-size: 15px;
+    margin-left: 30px;
+}
+.tacosImg1{
+    width: 230px;
+}
+#tacosRoot{
+    display: grid;
+    grid-template-columns: repeat(3,230px);
+    grid-gap: 50px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.tacosFood h3 {
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: -10px;
+    border-radius: 14px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    box-shadow: 10px 10px 10px 10px white;
+}
+.button-boxTaco button{
+    padding: 9px 7px;
+}
+#btnTacoLogin{
+    top:76px;
+    width: 160px;
+}
+.submitLogin{
+    padding: 10px;
+    margin-left: 14px;
+    font-size: 15px;
+    width: 100px;
+    border-radius: 20px;
+  }
+  .containerLogin{
+    color: red;
+    font-size: 17px;
+        width: 200px;
+        height: 100%; 
+        width: 100%; 
+    }
+    .backgroundTaco img{
+        margin-left:-150px;
+        width: 957px;
+        height: 400px;
+    
+    }
+    #root{
+        display: grid;
+        grid-template-columns: repeat(3,150px);
+    }
+    .img-box img{
+        width: 150px;
+     }
+     #rootTacoBell{
+        margin-left: 170px;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,150px);
+        grid-gap: 20px;
+      }
+     #cartPageTaco h1{
+        margin-left: -200px;
+        font-size: 20px;
+        font-weight: 500;
+        font-weight: bold;
+        color: #ff105f;
+     }
+     #sidebar{
+        margin-left: 670px;
+        margin-top: -680px;
+        border: 1px solid black;
+        /* width: 100px; */
+        
+     }
+     .head p{
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        font-weight: bold;
+        margin:10px;
+        
+     }
+     .cart-itemTaco p{
+        font-size: 15px;
+        font-weight: 500;
+        font-weight: bold;
+        color: green;
+        margin-left: 0px;
+        margin-top: 0px; 
+     }
+     .cart-itemTaco h2{
+        font-size: 15px;
+        font-weight: 500;
+        font-weight: bold;
+        margin-left: 0px;
+        margin-top: 0px;
+     }
+     .footTaco h3{
+        font-size: 15px;
+        font-weight: 500;
+        font-weight: bold;
+     } 
+      .footTaco h2{
+         margin-top: 0px; 
+     } 
+     /* about page */
+     .imageAbout img{
+        width: 853px;
+    }
+     #allDate{
+        margin-left: 170px;
+        display: grid;
+        grid-template-columns: repeat(2,250px);
+        grid-gap: 100px;
+     }
+     #allRes{
+        margin-top: 200px;
+        margin-left: 170px;
+        display: grid;
+        grid-template-columns: repeat(2,300px);
+        grid-gap: 120px;
+    }
+    .imageOurRes img{
+        width: 300px;
+    }
+    .imageOurPeople img{
+        width: 300px;
+    }
+    
+    .imageOurFoodAbout img{
+        width: 300px;
+    }
+    .image10 img{
+        width:300px;
+        margin-top: 400px;
+    }
+    
+    .image15 img{
+        width: 300px;
+    }
+    .image20151 img{
+    width: 300px;
+    margin-top: 350px;
+    }
+    
+    .image19 img{
+        width: 300px;
+    }
+    .image191 img{
+        width: 300px;
+        margin-top: 400px;
+    }
+    
+    .image22 img{
+        width: 350px;
+    }
+    .image62 img{
+        width: 300px;
+        margin-top: 400px;
+     }
+     
+    .image70 img{
+        width:300px;
+    }
+    .image10 img{
+        width:300px;
+        margin-top: 400px;
+    }
+    
+    .image15 img{
+        width: 300px;
+    }
+}

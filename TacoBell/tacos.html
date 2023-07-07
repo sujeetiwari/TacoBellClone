@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-Tacco Bell</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/logo-new.png" type="image/img.png">
+    <link rel="stylesheet" href="responisive.css">
+
+</head>
+<body>
+    <section id="header">
+        <div>
+            <a href="index.html">
+                <img src="image/logo-new.png" alt="" id="logo">
+            </a>
+            <ul id="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="addCart.html">ORDER NOW</a></li>
+                <li><a href="tacos.html">OUR FOOD</a></li>
+                <li><a href="">NUTRITION</a></li>
+                <li><a href="aboutus.html">ABOUT</a></li>
+                <li><a href="addCart.html">CART</a></li>
+                <li><a href="sign.html">Login</a></li>               
+                <li><a href="">MORE <i class="fa fa-plus"></i></a></li>
+        </ul>
+            </div>
+ </section>  
+<section id="list">
+    <ul id="tacosul">
+        <li><a href="tacos.html">Tacos</a></li>
+        <li><a href="burritos">Burritos</a></li>
+        <li><a href="valueCravings.html">Cravings</a></li>
+        <li><a href="specialists.html">Specialists</a></li>
+        <li><a href="quesadilla">Quesadilla</a></li>
+        <li><a href="meals.html">Meals</a></li>
+        <li><a href="sides.html">Sides</a></li>
+        <li><a href="shareables.html">Shareables</a></li>
+        <li><a href="beverages.html">Beverages</a></li>
+    </ul>
+</section>
+ <section id="tacosImage">
+    <img src="image/1370x650_Website_Internal_Product_Image_2_Taco_Meal_Veg.jpg" alt="" class="tacosInternalImage">
+        <h1>TACOS</h1>
+ </section>
+ <section id="tacosAddImage">
+    <div>
+        <div id="tacosCheckBox"></div>
+    </div>
+    <div>
+        <div id="tacosRoot"></div>
+    </div>
+ </section>
+ <section id="footer-start">
+    <div id="special">
+        <h1>SPECIAL OFFERS</h1>
+        <p>Don't miss out on exclusive Offers.</p>
+        <br>
+        <a href="">Special Offers</a>
+    </div>
+    <div id="findTacco">
+        <h1>FIND TACCO BELL</h1>
+        <p>Find the nearest Tacco Bell Restaurant in the city</p>
+        <br>
+        <a href="">Find Us</a>
+    </div>
+</section>
+<section id="footer">
+    <ul id="footer-ul">
+    <li><a href="">OUR FOOD</a></li>
+    <li><a href="">FIND US</a></li>
+    <li><a href="">NEWS</a></li>
+    <li><a href="">WORK WITH US</a></li>
+    <li><a href="">OFFERS</a></li>
+    <li><a href="">ABOUT US</a></li>
+    <li><a href="">CONTACT US</a></li>
+</ul>
+</section>
+<section id="footer-end">
+    <div id="footer-img">
+        <img src="image/logo-new.png" alt="">
+        <p>@2019 Tace Bell IP Holder.LLC.All Rights Reserved</p>
+    </div>
+    <div id="footer-socialLinks">
+        <i class="fa fa-facebook-f"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+ 
+            <script>
+                const tacos=[
+                    {
+                        id:1,
+                        name:'ALL',
+                    },
+                    {
+                        id:2,
+                        name:'VEG',
+                    },
+                    {
+                        id:3,
+                        name:'NON-VEG',
+                    }
+                ];
+                const filter=[...new Set(tacos.map((check)=>{
+                    return check;
+                }))];
+                document.getElementById('tacosCheckBox').innerHTML=filter.map((check)=>{
+                    var{id,name}=check;
+                    return(
+                        "<button class='normal' onclick='filterItems("+(id)+`)'>${name}</button>`
+                    )
+                }).join('');
+                  const tacosAll=[
+                  {
+                        id:1,
+                        image:'image/367x380__tuct_n-veg_1.jpg',
+                        name:'Ultimate Taco ',
+                        type:'Veg',
+                    },
+                    {
+                        id:2,
+                        image:'image/367x380__nct.jpg',
+                        name:'Naked Cheese Taco',
+                        type:'Veg',
+                    },
+                    {
+                        id:2,
+                        image:'image/367x380_crunchy_mexican_paneer_taco.jpg',
+                        name:'Ultimate Cheese Taco',
+                        type:'Veg',
+                    },
+                    {
+                        id:3,
+                        image:'image/367x380_crunchy_mexican_chicken_taco.jpg',
+                        name:'Ultimate Chicken Taco',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380__weekend_taco_party_n-veg.jpg',
+                        name:'Weeken Taco Party ',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380_soft_mexican_chicken_taco.jpg',
+                        name:'Soft Taco',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380_soft_mexican_paneer_taco_1.jpg',
+                        name:'Cheese Taco Meal',
+                        type:'Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380__tuct_n-veg_1.jpg',
+                        name:'Ultimate Cheese Taco ',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380__nct.jpg',
+                        name:'Naked Chicken Taco',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380_website_internal_product_image_2_taco_meal_n-veg.jpg',
+                        name:'Two Taco Meal',
+                        type:'Veg',
+                    },
+                    {
+                        id:3,
+                        image:'image/367x380_website_internal_product_image_2_taco_meal_veg.jpg',
+                        name:'Two Taco Meal',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380__tuct_n-veg_1.jpg',
+                        name:'Ultimate Chicken Taco ',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380__nct.jpg',
+                        name:'Naked Chicken Taco',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380_crunchy_mexican_paneer_taco.jpg',
+                        name:'Ultimate Cheese Taco',
+                        type:'Veg',
+                    },
+                    {
+                        id:3,
+                        image:'image/367x380_crunchy_mexican_chicken_taco.jpg',
+                        name:'Ultimate Cheese Taco',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:2,
+                        image:'image/367x380__weekend_taco_party_n-veg.jpg',
+                        name:'Weeken Taco Party ',
+                        type:'Veg',
+                    },
+                    {
+                        id:3,
+                        image:'image/367x380_soft_mexican_chicken_taco.jpg',
+                        name:'Soft Taco',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380_soft_mexican_paneer_taco_1.jpg',
+                        name:'Ultimate Chicken Meal',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:3,
+                        image:'image/367x380__tuct_n-veg_1.jpg',
+                        name:'Chicken Taco Meal',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:1,
+                        image:'image/367x380__nct.jpg',
+                        name:'Naked Chicken Taco',
+                        type:'Non-Veg',
+                    },
+                    {
+                        id:2,
+                        image:'image/367x380_website_internal_product_image_2_taco_meal_n-veg.jpg',
+                        name:'Two Taco Meal',
+                        type:'Veg',
+                    },
+                    {
+                        id:3,
+                        image:'image/367x380_website_internal_product_image_2_taco_meal_veg.jpg',
+                        name:'Special Taco Meal',
+                        type:'Non-Veg',
+                    }
+                  ]
+                  const categories=[...new Set(tacosAll.map((item)=>
+    {return item}
+    ))]
+
+    const filterItems=(a)=>{
+        const filterCategories=categories.filter(item);
+        function item(value){
+            if(value.id==a){
+                return(
+                    value.id
+                )
+            }
+        }
+        displayItem(filterCategories)
+    }
+    const displayItem=(items)=>{
+        document.getElementById('tacosRoot').innerHTML=items.map((item)=>{
+            let i=0;
+            var{image,name,type}=item;
+            return(
+                `<div class='tacosItem'>
+                    <div class='tacosFood'>
+                    <img class='tacosImg1' src=${image}></img>
+                <h3>${name}</h3>
+                <h2> ${type}</h2>
+                `+
+        "<button onclick='addtocart("+(i++)+")'>Cart</button>"+`
+                </div>
+                </div>`
+            )
+        }).join('');
+    }
+    // displayItem(categories);
+   
+
+
+            </script>    
+   <script src="script.js"></script> 
+</body>
+</html>
